@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evagreen Assignment</title>
+        <style type="text/css"/>
+        body{
+    color:purple;
+    background:yellow;
+    }
+    </style> 
+    </head>
+    <body>
+    <script type="text/javascript"/>
+        document.write("<h2>Good day Mr. Hank!<br> I am Evagreen and I'm to help you and your team with the compressed air measures for the expedition.<br> Here is the calculation required:</h2>");
+    
+        //"Parameters from earth to mars"
+        var
+        distance=151270000
+        speed=1000
+        litre=0.0833
+        var time=distance/speed;
+        document.write("*<b>Time required for spaceship to reach earth:</b><br>",time," ","hours.");
+        
+        var litre_a=time*litre;
+        document.write("<br>*<b><u>Litres of compressed air required for a person to reach mars:</u></b><br>",litre_a," ","litres.")
+    
+        //"Parameters for revolution in mars"
+        var
+        days=687
+        hour=0.0417
+        var rev=days/hour;
+        document.write("<br>*<b>Time spent on mars single revolution:</b><br>",rev," ","hours.")
+        var litre_b=rev*litre;
+        document.write("<br>*<b><u>Litres of compressed air required to sustain a person for mars revolution:</u></b><br>",litre_b," ","litres.")
+        
+        //"Parameters from mars back to earth"
+        document.write("<br>*<b><u>Litres of compressed air required for a person to reach earth:</u></b><br>",litre_a," ","litres.")
+        
+        //"Calculation for a team of 10"
+        var
+        sum_litres=(litre_a)**2 +litre_b
+        total=sum_litres*10;
+        document.write("<p><b>Total Amount in Litres of Compressed air needed per person is</b></p>",sum_litres," ","litres.","<p><b>For a team of ten, you require a total of </b></p>",total," ","litres.")
+        
+        //"Recommendations"
+        document.write("<h3><p><b><i>As an expert, I'll advice an additional 1000 litres for air loss in the course of your journey. This amounts to an appromixate gross total of <u>1,587,814,062</u> litres of compressed air.</i></b></p></h3>")
+        
+    </script>
+    <a href="www.programminghub.io">Click here for more info.</a>
+    <h2>DO HAVE A SAFE TRIP.</h2>
+    </body>
+</html>
